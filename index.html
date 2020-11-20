@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts Google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Russo+One&display=swap" rel="stylesheet"> 
+
+    <!-- Pasta css-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Cesar Rododrigues |</title>
+  </head>
+  <body>
+   
+    <nav class="navStyle navbar navbar-light">
+        <span class="titulo" class="navbar-brand mb-0 h1">CESAR RODRIGUES</span>
+        <span class="navbar-brand mb-0 h1 ">
+            <a href="https://www.facebook.com/cesargabriel.rodrigues"><div class="icon icon-facebook"></div></a>
+            <a href="https://twitter.com/Cesarr_GR"><div class="icon icon-twitter"></div></a>
+            <a href="https://www.linkedin.com/in/cesarrodrigues-/"><div class="icon icon-linkedin"></div></a>
+            <a href="#"><div class="icon icon-email"></div></a>
+        </span>
+    </nav>
+
+
+
+    <main>
+        <div class="containerPrincipal">
+            <div class="telaInicial">
+                <div class="containerPortfolioInicial">
+<!------------------------------------------TEXTO------------------------------------------------------------------------------>
+                    <div class="containerTexto">
+                        <div class="TextoPrincial">
+                            <h2 class="titulo tituloSecundario">MINHA</h2>
+                            <h2 class="titulo tituloSecundario">CARREIRA</h2>
+                        </div>
+                        <div class="TextoSecundario">
+                            <p>Sou desenvolvedor web front, back e aplicações mobile, tenho conhecimento em algumas linguagem. Atualmente estou cursando Analise e Desenvolvimento de Sistemas pela Fatec America, ingressando para o ultimo semestre, a procura de uma vaga de estagio. </p>
+                        </div>
+                    </div>
+<!------------------------------------------TEXTO------------------------------------------------------------------------------>
+
+                    <div class="displayCode">
+                       
+                        <h3 class="textoCode" id="code">printf(</h3>
+                        <h3 class="textoCode" id="code1" style="line-height: 6px;">"Hello World!"</h3>
+                        <h3 class="textoCode" id="code2">);</h3>   
+                       
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="containerPortfolio"></div>
+           
+        </div>
+
+
+
+
+
+        <div class="divSubTitulo">
+            <h2 class="titulo tituloSegundario">MINHA</h2>
+            <h2 class="titulo tituloSegundario">CARREIRA</h2>
+        </div>
+    </main>
+
+
+
+
+
+    <script>
+
+        function digitar(elemento,elemento1,elemento2){
+            const textoArray = elemento.innerHTML.split('');
+            const textoArray1 = elemento1.innerHTML.split('');
+            const textoArray2 = elemento2.innerHTML.split('');
+
+           
+            elemento.innerHTML = ''
+            elemento1.innerHTML = ''   
+            elemento2.innerHTML = ''
+            textoArray.forEach((letra, i ) =>{
+                setTimeout(() => elemento.innerHTML += letra, 90 * i )
+            })
+            
+            setTimeout(function(){
+                textoArray1.forEach((letra, i ) =>{
+                    setTimeout(() => elemento1.innerHTML += letra, 90 * i )
+                 })
+            }, 800)
+
+            setTimeout(function(){
+                textoArray2.forEach((letra, i ) =>{
+                    setTimeout(() => elemento2.innerHTML += letra, 90 * i )
+                })
+            },2000)
+        }
+
+        
+        
+
+        const texto = document.querySelector('#code')
+        const texto1 = document.querySelector('#code1')
+        const texto2 = document.querySelector('#code2')
+      
+        digitar(texto,texto1,texto2);
+
+    </script>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
