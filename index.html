@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Fonts Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Russo+One&display=swap" rel="stylesheet"> 
 
     <!-- Pasta css-->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsivel.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -19,7 +21,7 @@
   </head>
   <body>
    
-    <nav class="navStyle navbar navbar-light">
+    <nav class="navStyle navbar navbar-light col-s-12">
         <span class="titulo" class="navbar-brand mb-0 h1">CESAR RODRIGUES</span>
         <span class="navbar-brand mb-0 h1 ">
             <a href="https://www.facebook.com/cesargabriel.rodrigues"><div class="icon icon-facebook"></div></a>
@@ -42,35 +44,119 @@
                             <h2 class="titulo tituloSecundario">CARREIRA</h2>
                         </div>
                         <div class="TextoSecundario">
-                            <p>Sou desenvolvedor web front, back e aplicações mobile, tenho conhecimento em algumas linguagem. Atualmente estou cursando Analise e Desenvolvimento de Sistemas pela Fatec America, ingressando para o ultimo semestre, a procura de uma vaga de estagio. </p>
+                            <p>Sou desenvolvedor web front, back, aplicações mobile e um amante pela tecnologia. Atualmente estou cursando Analise e Desenvolvimento de Sistemas pela Fatec America.</p>
                         </div>
+
+                        <a class="botao" href="#teste">Um Pouco Mais</a>
                     </div>
 <!------------------------------------------TEXTO------------------------------------------------------------------------------>
 
                     <div class="displayCode">
                        
-                        <h3 class="textoCode" id="code">printf(</h3>
+                        <h3 class="textoCode" id="code">printf)</h3>
                         <h3 class="textoCode" id="code1" style="line-height: 6px;">"Hello World!"</h3>
                         <h3 class="textoCode" id="code2">);</h3>   
                        
-
                     </div>
                     
+                    <div class="iconss">
+                        <a href="#teste" class="">
+                            <span class="material-icons icons">keyboard_arrow_down</span>
+                        </a>
+                      
+                    </div>
+                   
+
                 </div>
+                
             </div>
 
-            <div class="containerPortfolio"></div>
+            <div class="containerPortfolio">
+
+
+                <di>
+                    <h3 class="tituloSobre">
+                        SOBRE MIM
+                    </h3>
+                    <div>
+                        <ul>
+                            <li class="sobre"> 
+                                <span class="material-icons">sentiment_very_satisfied</span>
+                                <P>Cesar Gabriel Araujo Lourenço Rodrigues</P>
+                            </li>
+                            <li class="sobre"> 
+                                <span class="material-icons">elderly</span>
+                                <P id="idade"></P>
+                            </li>
+                            <li class="sobre"> 
+                                <span class="material-icons">map</span>
+                                <P>Santa Barbara D'Oetse, SP</P>
+                            </li>
+                        </ul>
+                    </div>
+                </di>
+
+                <div class="telaGradu">
+                
+                        <div  class="telaGraduSub">
+                            <h3 class="tituloGradu">GRADUAÇÃO</h3>
+                        </div>
+
+                        <div class="divCurso">
+                            <ul style="color: white;"> 
+                                <li class="sobre" style="margin-top: 50px; margin-bottom: 10px;">
+                                    <span class="material-icons">school</span>
+                                    <a href="http://www.fatec.edu.br/" class="fatec">FATEC America - São Paulo</a>
+                                </li>
+                                <li class="sobre">
+                                    <span class="material-icons">menu_book</span>
+                                    <P>Analise e Desenvolvimento de Sistemas</P>
+                                </li>   
+                                <li class="sobre" style="margin-top: 50px; margin-bottom: 10px;">
+                                    <span class="material-icons">school</span>
+                                    <a href="https://santabarbara.sp.senai.br/" class="fatec">SENAI - Alvares Romi</a>
+                                </li>
+                                <li class="sobre">
+                                    <span class="material-icons">menu_book</span>
+                                    <P>Analise e Desenvolvimento de Sistemas</P>
+                                </li>   
+                            </ul>
+                        </div>
+
+                        
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4147.056141877611!2d-47.35170502331378!3d-22.739470373098886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89bea5cdb94f9%3A0xffb368bd91ea12ae!2sFatec%20Americana%20-%20Faculdade%20de%20Tecnologia%20de%20Americana!5e0!3m2!1spt-BR!2sbr!4v1606437158867!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              
+                </div>
+
+                <p>
+                    Botões desativados usando o elemento <a> se comportam um pouco diferente:
+
+                        O elemento <a> não suport o atributo disabled, então, você deve usar a classe .disabled para fazê-lo parecer desativado, visualmente;
+                        Alguns estilos (que ainda não são bem suportados) são usados para desativarem todos os pointer-events, em botões âncora;
+                        Em browsers que suportam essa propriedade, você não verá o cursor desativado.
+                        Botões desativados devem ter o atributo aria-disabled="true" para indicar o estado do elemento para tecnologias assistivas.
+                </p>
+            </div>
+
+
+            <div class="rootBar" id="teste">
+                <p class="rootBarNome">
+                    Cesar Gabriel Rodrigues
+                </p>
+                <p class="rootBarContato">
+                    CONTATO
+                </p>
+                <a href="#" style="position: relative; top: 45px;"><div class="icon icon-email"></div></a>
+                <p class="rootBarContato">
+                    GITHUB
+                </p>
+                <p >
+                    <a href="https://github.com/CezarGR" class="rootBarGit"> CezarGR </a>
+                </p>
+            </div>
            
         </div>
 
-
-
-
-
-        <div class="divSubTitulo">
-            <h2 class="titulo tituloSegundario">MINHA</h2>
-            <h2 class="titulo tituloSegundario">CARREIRA</h2>
-        </div>
     </main>
 
 
@@ -88,25 +174,24 @@
             elemento.innerHTML = ''
             elemento1.innerHTML = ''   
             elemento2.innerHTML = ''
+
             textoArray.forEach((letra, i ) =>{
-                setTimeout(() => elemento.innerHTML += letra, 90 * i )
+            setTimeout(() => elemento.innerHTML += letra, 90 * i )
             })
             
             setTimeout(function(){
                 textoArray1.forEach((letra, i ) =>{
                     setTimeout(() => elemento1.innerHTML += letra, 90 * i )
-                 })
+                })
             }, 800)
 
             setTimeout(function(){
                 textoArray2.forEach((letra, i ) =>{
                     setTimeout(() => elemento2.innerHTML += letra, 90 * i )
                 })
-            },2000)
+            },2000)     
+         
         }
-
-        
-        
 
         const texto = document.querySelector('#code')
         const texto1 = document.querySelector('#code1')
@@ -114,11 +199,24 @@
       
         digitar(texto,texto1,texto2);
 
+       
+        function idade(){
+            var year = new Date().getFullYear();
+            var idade = -2000 + year;
+            document.getElementById("idade").innerHTML = idade + ' anos';
+        }
+
+        idade()
+        
+
     </script>
 
+
     <!-- JavaScript (Opcional) -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
