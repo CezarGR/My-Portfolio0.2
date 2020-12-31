@@ -120,6 +120,7 @@ html{
     /* line-height: 38px; */
     margin-top: 25px;
     color: #303841;
+    animation-iteration-count: 3;
 }
 
 #code2::after{

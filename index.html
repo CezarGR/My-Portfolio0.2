@@ -166,7 +166,10 @@
     <script>
 
         function digitar(elemento,elemento1,elemento2){
-            const textoArray = elemento.innerHTML.split('');
+            
+            setInterval(function(){
+
+                const textoArray = elemento.innerHTML.split('');
             const textoArray1 = elemento1.innerHTML.split('');
             const textoArray2 = elemento2.innerHTML.split('');
 
@@ -190,7 +193,10 @@
                     setTimeout(() => elemento2.innerHTML += letra, 90 * i )
                 })
             },2000)     
-         
+
+            }, 3000)
+
+            
         }
 
         const texto = document.querySelector('#code')
@@ -198,7 +204,6 @@
         const texto2 = document.querySelector('#code2')
       
         digitar(texto,texto1,texto2);
-
        
         function idade(){
             var year = new Date().getFullYear();
