@@ -98,16 +98,27 @@ html{
 }
 
 .displayCode{
-    width: 405px;
+    /*
+     width: 405px;
     height: 223px;
     position: relative;
+    margin: auto;
+    display: flex;
+    float: right;
+    bottom: 242px;
+    right: 100px;
+    display: block;
+    */
 
+    width: 405px;
+    height: 223px;
+    /* position: relative; */
     /* margin: 0px; */
     /* left: 0px; */
     /* align-items: center; */
     margin: auto;
     display: flex;
-    float: right;
+    /* float: right; */
     bottom: 242px;
     right: 100px;
     display: block;
@@ -322,5 +333,3 @@ html{
     align-items: center;
     top: 100px;
 }
-
-
