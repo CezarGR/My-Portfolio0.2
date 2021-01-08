@@ -30,7 +30,7 @@
                         <span class="navbar-brand mb-0 h1 ">
                             <a href="#" class="col-xs col-s col-m "><div class="icon icon-facebook"></div></a>
                             <a href="#" class="col-xs col-s col-m "><div class="icon icon-twitter"></div></a>
-                            <a href="https://www.linkedin.com/in/cesarrodrigues-/" class="col-xs col-s col-m "><div class="icon icon-linkedin"></div></a>
+                            <a href="https://www.linkedin.com/in/cesarrodrigues-/" target="_new" class="col-xs col-s col-m "><div class="icon icon-linkedin"></div></a>
                             <a href="#" class="col-xs col-s col-m "><div class="icon icon-email" ></div></a>
                         </span>
                     </nav>
@@ -70,7 +70,7 @@
 
                         <div class="col-xs col-s col-m col-md-1 col-lg-1 col-xl-1 p-3 align-self-end" style="margin-bottom: 70px;">
                         <div class="iconss">
-                                <a href="#projeto" class="teste">
+                                <a  class="teste">
                                     <span class="material-icons icons">keyboard_arrow_down</span>
                                 </a>
                         </div>                      
@@ -226,7 +226,7 @@
                         </div>
                         
 
-                        <div class="col-12" style="margin: 50px 0px 50px 0px; background-color: #303841; padding: 20px;">
+                        <div class="col-12" style="margin: 50px 0px 50px 0px; background-color: #303841; padding: 20px;" id="quiz">
                             <div class="container">
 
                                 <div class="row">
@@ -345,9 +345,19 @@
       
         digitar(texto,texto1,texto2);
        
+
         function idade(){
-            var year = new Date().getFullYear();
-            var idade = -2000 + year;
+            const date = new Date();
+            const anoDeNacismento = 2000;
+   
+            if( date.getDate >= 18 && date.getMonth >= 5){
+                var idade = - anoDeNacismento + date.getFullYear();
+            }
+            else{
+                var idade = date.getFullYear() - anoDeNacismento -1 ;
+            }
+    
+    
             document.getElementById("idade").innerHTML = idade + ' anos';
         }
 
