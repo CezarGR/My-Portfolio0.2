@@ -447,6 +447,7 @@ html{
     margin:10px;
     color: white;
     font-family: 'Russo One', sans-serif;
+<<<<<<< HEAD
     font-size: 10px;
 }
 
@@ -473,3 +474,7 @@ html{
     color: #00adb5;
 }
   
+=======
+    font-size: 15px;
+}
+>>>>>>> d98f86c1b618de2f7cfa1668850bed9a90c5bf08
