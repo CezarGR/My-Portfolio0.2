@@ -94,6 +94,7 @@ html{
     left: 70px;
     width: 356px;
     height: 166px;
+    
 }
 
 .displayCode{
@@ -341,8 +342,8 @@ html{
     border-radius: 20px;
 }
 
-.nivel1{
-    background-color: #a33919;
+.nivelAvançado{
+    background-color: #ff5722;
     width: 100%;
     animation:up1 2s;
     animation-timing-function: ease-out;
@@ -357,9 +358,9 @@ html{
         width: 100%;
     }
 }
-.nivel2{
-    background-color: #7c1010;
-    width: 70%;
+.nivelIntermediario{
+    background-color: #303841;
+    width: 80%;
     animation: up2 2s;
     animation-timing-function: ease-out;
     animation-delay: 1s;
@@ -370,12 +371,12 @@ html{
         width: 10%;
     }
     to{
-        width: 70%;
+        width: 80%;
     }
 }
-.nivel3{
-    background-color: #56e756;
-    width: 50%;
+.nivelBasico{
+    background-color:#00adb5;
+    width: 60%;
     animation:up3 2s;
     animation-timing-function: ease-out;
     animation-delay: 1s;
@@ -386,25 +387,10 @@ html{
         width: 10%;
     }
     to{
-        width: 50%;
+        width: 60%;
     }
 }
-.nivel4{
-    background-color: #eefd19;
-    width: 20%;
-    animation:up4 2s;
-    animation-timing-function: ease-out;
-    animation-delay: 1s;
-    animation-iteration-count: 2;
-}
-@keyframes up4{
-    from{
-        width: 10%;
-    }
-    to{
-        width: 20%;
-    }
-}
+
 
 .imageProjeto{
     background:  url(../img/Projeto_Calculadora.png);
@@ -412,4 +398,54 @@ html{
     height: 100vh;
     width: 100vw;
     background-size: cover ;
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime = "left"]{
+    transform: translate3d(10px, 0, 0);
+}
+
+[data-anime = "right"]{
+    transform: translate3d(-10px, 0, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.QualiText{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    text-align: left;
+    margin: 0px 20px 0px 20px;
+}
+.Quali-container{
+
+
+}
+
+.QualiSubText{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    margin: 0px 20px 0px 20px; 
+    font-size: 12px;
+
+    text-align: right;
+}
+
+.Quali-nivel{
+    margin: 0px 10px 0px 10px;
+    border-radius: 20px;
+}
+
+.QualiP{
+    margin:10px;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 10px;
 }

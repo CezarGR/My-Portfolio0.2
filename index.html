@@ -106,7 +106,7 @@
 
 
         <!---------------------------------------------------------SOBRE MIM------------------------------------------------------------------>
-                        <div class="col-12">
+                        <div class="col-12" data-anime="left">
                             <di>
                                 <h3 class="tituloSobre">
                                     SOBRE MIM
@@ -133,7 +133,7 @@
 
 
         <!--------------------------------------------------------GRADUAÇÃO------------------------------------------------------------------->
-                        <div class=" col-12 ">
+                        <div class=" col-12 " data-anime="right">
 
                             <div class="telaGradu">
                                 <div class="container">
@@ -182,14 +182,52 @@
 
     
         <!------------------------------------------------------------QUALIFICAÇÃO-------------------------------------------------------->  
-                        <div class="col-12" style="">
+                        <div class="col-12"  data-anime="left">
                             <div style="text-align: center;">
                                 <h3 class="tituloGradu" style="padding-top: 20px; padding-bottom: 20px; color: #303841;">QUALIFICAÇÃO</h3>
                                 <div style="margin: 10px; padding: 10px;">
-                                    <div class="nivel nivel1" ></div>
-                                    <div class="nivel nivel2"  ></div>
-                                    <div class="nivel nivel3" ></div>
-                                    <div class="nivel nivel4" ></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-4 align-self-baseline Quali-nivel" style="background-color: #ff5722;">
+                                            <p class="QualiP" >AVANÇADO</p>
+                                        </div>
+                                        <div class="col-4 Quali-nivel"  style="background-color:  #303841;" >
+                                            <p class="QualiP">INTERMEDIARIO</p>
+                                        </div>
+                                        <div class="col-4 align-self-center Quali-nivel" style="background-color: #00adb5;">
+                                            <p class="QualiP" >BASICO</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="nivel nivelAvançado"  data-nivel="">
+                                        <div class="Quali-container row justify-content-between ">
+                                            <p class="QualiText col-12">HTML CSS JavaScript</p>
+                                        </div>
+                                    </div>
+                                    <div class="nivel nivelIntermediario " data-nivel="" >
+                                        <div class="Quali-container row justify-content-between ">
+                                            <p class="QualiText col-12">Java</p>
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="nivel nivelIntermediario " data-nivel="">
+                                        <div class="Quali-container row justify-content-between ">
+                                            <p class="QualiText col-12">SQL</p>
+                                           
+
+                                        </div>
+                                    </div>
+                                    <div class="nivel nivelIntermediario " data-nivel="" >
+                                        <div class="Quali-container row justify-content-between ">
+                                            <p class="QualiText col-12">C</p>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="nivel nivelBasico " data-nivel="" >
+                                        <div class="Quali-container row justify-content-between ">
+                                            <p class="QualiText col-12">React</p>                                         
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +239,7 @@
                         </div>
 
         <!------------------------------------------------------------PROJETOS------------------------------------------------------------>
-                        <div class="col-12" style="margin: 50px 0px 50px 0px; background-color: #eeeeee; padding: 20px;">
+                        <div class="col-12" style="margin: 50px 0px 50px 0px; background-color: #eeeeee; padding: 20px;" data-anime="right">
                             <div class="container">
 
                                 <div class="row">
@@ -226,7 +264,7 @@
                         </div>
                         
 
-                        <div class="col-12" style="margin: 50px 0px 50px 0px; background-color: #303841; padding: 20px;" id="quiz">
+                        <div class="col-12" style="margin: 50px 0px 50px 0px; background-color: #303841; padding: 20px;" data-anime="right">
                             <div class="container">
 
                                 <div class="row">
@@ -372,6 +410,7 @@
     <!-- JavaScript (Opcional) -->
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
