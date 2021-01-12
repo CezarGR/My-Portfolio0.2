@@ -31,7 +31,6 @@ function animaScroll(){
         }
         else{
             element.classList.remove(animationClass); 
-            console.log('oi')
         }
 
     }))
@@ -55,7 +54,7 @@ function animaNivell(){
     }))
 
     sum = 0;
-    console.log(sum)
+
 }
 
 animaNivell();
